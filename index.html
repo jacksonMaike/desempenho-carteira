@@ -8,7 +8,7 @@
                 <link rel='stylesheet' href='style.css'>
                 <title>Desempenho Carteira</title>
               </head>
-              <body><div class='container'><div class='dataAtualizacao'></h3>Data de Atualizacao: 28/02/2021</h3></div><table class='table table-striped'><thead class='thead-dark'>
+              <body><div class='container'><div class='dataAtualizacao'><span>Data de Atualizacao: 28/02/2021</span></div><table class='table table-striped resp'><thead class='thead-dark'>
                       <tr>
                         <th class='text-center'>Papel</td>
                         <th class='text-center'>Compra</td>
@@ -16,21 +16,106 @@
                         <th class='text-center'>Lucro</td>
                         <th class='text-center'>%</td>
                       </tr>
-                    <thead><tbody><tr><td class='vermelho'>TCSA3</td><td class='vermelho'>R$ 11,42</td><td class='vermelho'>R$ 7,66</td><td class='vermelho'>-R$ 616,64</td>
-              <td class='vermelho'>-32,91%</td></tr><tr><td class='vermelho'>GFSA3</td><td class='vermelho'>R$ 5,86</td><td class='vermelho'>R$ 4,60</td><td class='vermelho'>-R$ 252,00</td>
-              <td class='vermelho'>-21,49%</td></tr><tr><td class='vermelho'>COGN3</td><td class='vermelho'>R$ 4,71</td><td class='vermelho'>R$ 3,74</td><td class='vermelho'>-R$ 97,00</td>
-              <td class='vermelho'>-20,58%</td></tr><tr><td class='vermelho'>CVCB3</td><td class='vermelho'>R$ 20,13</td><td class='vermelho'>R$ 16,53</td><td class='vermelho'>-R$ 108,00</td>
-              <td class='vermelho'>-17,87%</td></tr><tr><td class='vermelho'>BBAS3</td><td class='vermelho'>R$ 34,09</td><td class='vermelho'>R$ 28,05</td><td class='vermelho'>-R$ 664,40</td>
-              <td class='vermelho'>-17,71%</td></tr><tr><td class='vermelho'>IRBR3</td><td class='vermelho'>R$ 7,18</td><td class='vermelho'>R$ 6,00</td><td class='vermelho'>-R$ 389,40</td>
-              <td class='vermelho'>-16,42%</td></tr><tr><td class='vermelho'>VVAR3</td><td class='vermelho'>R$ 14,16</td><td class='vermelho'>R$ 11,87</td><td class='vermelho'>-R$ 38,93</td>
-              <td class='vermelho'>-16,16%</td></tr><tr><td class='vermelho'>AERI3</td><td class='vermelho'>R$ 12,05</td><td class='vermelho'>R$ 10,19</td><td class='vermelho'>-R$ 96,72</td>
-              <td class='vermelho'>-15,43%</td></tr><tr><td class='vermelho'>POMO3</td><td class='vermelho'>R$ 2,68</td><td class='vermelho'>R$ 2,42</td><td class='vermelho'>-R$ 3,90</td>
-              <td class='vermelho'>-9,69%</td></tr><tr><td class='vermelho'>OIBR3</td><td class='vermelho'>R$ 2,05</td><td class='vermelho'>R$ 1,88</td><td class='vermelho'>-R$ 560,83</td>
-              <td class='vermelho'>-8,28%</td></tr><tr><td class='vermelho'>SAPR4</td><td class='vermelho'>R$ 4,22</td><td class='vermelho'>R$ 3,96</td><td class='vermelho'>-R$ 52,00</td>
-              <td class='vermelho'>-6,15%</td></tr><tr><td class='vermelho'>ITSA4</td><td class='vermelho'>R$ 10,59</td><td class='vermelho'>R$ 9,95</td><td class='vermelho'>-R$ 236,80</td>
-              <td class='vermelho'>-6,03%</td></tr><tr><td class='verde'>PETR4</td><td class='verde'>R$ 22,18</td><td class='verde'>R$ 22,24</td><td class='verde'>R$ 3,18</td>
-              <td class='verde'>0,27%</td></tr><tr><td class='verde'>SHUL4</td><td class='verde'>R$ 12,69</td><td class='verde'>R$ 12,89</td><td class='verde'>R$ 30,00</td>
-              <td class='verde'>1,58%</td></tr><tr><td class='verde'>ELET3</td><td class='verde'>R$ 28,21</td><td class='verde'>R$ 32,41</td><td class='verde'>R$ 92,40</td>
-              <td class='verde'>14,89%</td></tr><tr><td class='verde'>AZUL4</td><td class='verde'>R$ 34,77</td><td class='verde'>R$ 40,60</td><td class='verde'>R$ 408,10</td>
-              <td class='verde'>16,77%</td></tr><tr><td class='verde'>SANB3</td><td class='verde'>R$ 14,99</td><td class='verde'>R$ 17,62</td><td class='verde'>R$ 789,00</td>
-              <td class='verde'>17,55%</td></tr></tbody></table></div></body></html>
+                    </thead><tbody><tr>
+                  <td class='vermelho headPapel'>TCSA3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 11,42</td>
+                  <td class='vermelho' data-label='Valor'>R$ 7,66</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 616,64</td>
+                  <td class='vermelho' data-label='%'>-32,91%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>GFSA3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 5,86</td>
+                  <td class='vermelho' data-label='Valor'>R$ 4,60</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 252,00</td>
+                  <td class='vermelho' data-label='%'>-21,49%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>COGN3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 4,71</td>
+                  <td class='vermelho' data-label='Valor'>R$ 3,74</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 97,00</td>
+                  <td class='vermelho' data-label='%'>-20,58%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>CVCB3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 20,13</td>
+                  <td class='vermelho' data-label='Valor'>R$ 16,53</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 108,00</td>
+                  <td class='vermelho' data-label='%'>-17,87%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>BBAS3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 34,09</td>
+                  <td class='vermelho' data-label='Valor'>R$ 28,05</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 664,40</td>
+                  <td class='vermelho' data-label='%'>-17,71%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>IRBR3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 7,18</td>
+                  <td class='vermelho' data-label='Valor'>R$ 6,00</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 389,40</td>
+                  <td class='vermelho' data-label='%'>-16,42%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>VVAR3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 14,16</td>
+                  <td class='vermelho' data-label='Valor'>R$ 11,87</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 38,93</td>
+                  <td class='vermelho' data-label='%'>-16,16%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>AERI3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 12,05</td>
+                  <td class='vermelho' data-label='Valor'>R$ 10,19</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 96,72</td>
+                  <td class='vermelho' data-label='%'>-15,43%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>POMO3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 2,68</td>
+                  <td class='vermelho' data-label='Valor'>R$ 2,42</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 3,90</td>
+                  <td class='vermelho' data-label='%'>-9,69%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>OIBR3</td>
+                  <td class='vermelho' data-label='Compra'>R$ 2,05</td>
+                  <td class='vermelho' data-label='Valor'>R$ 1,88</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 560,83</td>
+                  <td class='vermelho' data-label='%'>-8,28%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>SAPR4</td>
+                  <td class='vermelho' data-label='Compra'>R$ 4,22</td>
+                  <td class='vermelho' data-label='Valor'>R$ 3,96</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 52,00</td>
+                  <td class='vermelho' data-label='%'>-6,15%</td>
+              </tr><tr>
+                  <td class='vermelho headPapel'>ITSA4</td>
+                  <td class='vermelho' data-label='Compra'>R$ 10,59</td>
+                  <td class='vermelho' data-label='Valor'>R$ 9,95</td>
+                  <td class='vermelho' data-label='Lucro'>-R$ 236,80</td>
+                  <td class='vermelho' data-label='%'>-6,03%</td>
+              </tr><tr>
+                  <td class='verde headPapel'>PETR4</td>
+                  <td class='verde' data-label='Compra'>R$ 22,18</td>
+                  <td class='verde' data-label='Valor'>R$ 22,24</td>
+                  <td class='verde' data-label='Lucro'>R$ 3,18</td>
+                  <td class='verde' data-label='%'>0,27%</td>
+              </tr><tr>
+                  <td class='verde headPapel'>SHUL4</td>
+                  <td class='verde' data-label='Compra'>R$ 12,69</td>
+                  <td class='verde' data-label='Valor'>R$ 12,89</td>
+                  <td class='verde' data-label='Lucro'>R$ 30,00</td>
+                  <td class='verde' data-label='%'>1,58%</td>
+              </tr><tr>
+                  <td class='verde headPapel'>ELET3</td>
+                  <td class='verde' data-label='Compra'>R$ 28,21</td>
+                  <td class='verde' data-label='Valor'>R$ 32,41</td>
+                  <td class='verde' data-label='Lucro'>R$ 92,40</td>
+                  <td class='verde' data-label='%'>14,89%</td>
+              </tr><tr>
+                  <td class='verde headPapel'>AZUL4</td>
+                  <td class='verde' data-label='Compra'>R$ 34,77</td>
+                  <td class='verde' data-label='Valor'>R$ 40,60</td>
+                  <td class='verde' data-label='Lucro'>R$ 408,10</td>
+                  <td class='verde' data-label='%'>16,77%</td>
+              </tr><tr>
+                  <td class='verde headPapel'>SANB3</td>
+                  <td class='verde' data-label='Compra'>R$ 14,99</td>
+                  <td class='verde' data-label='Valor'>R$ 17,62</td>
+                  <td class='verde' data-label='Lucro'>R$ 789,00</td>
+                  <td class='verde' data-label='%'>17,55%</td>
+              </tr></tbody></table></div></body></html>
